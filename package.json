@@ -1,0 +1,50 @@
+{
+  "name": "loopback-3-mongo",
+  "version": "1.0.0",
+  "main": "dist/server/server.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint",
+    "build": "babel src -s -D --out-dir dist --source-maps --copy-files --presets es2015,stage-0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "helmet": "^3.10.0",
+    "loopback": "^3.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.2.0",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/prateek-raj/loopback-3-mongo.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "loopback-3",
+    "nodejs"
+  ],
+  "author": "Prateek Raj (r.prateek11@gmail.com)",
+  "license": "UNLICENSED",
+  "description": "loopback-3 + mongo boilerplate",
+  "bugs": {
+    "url": "https://github.com/prateek-raj/loopback-3-mongo/issues"
+  },
+  "homepage": "https://github.com/prateek-raj/loopback-3-mongo#readme"
+}
